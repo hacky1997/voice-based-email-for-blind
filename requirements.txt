@@ -1,0 +1,11 @@
+speech_recognition as sr
+smtplib
+pyaudio
+platform
+sys
+from bs4 import BeautifulSoup
+email
+imaplib
+gtts
+pyglet
+time
