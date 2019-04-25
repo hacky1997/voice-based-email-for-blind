@@ -1,11 +1,5 @@
-speech_recognition as sr
-smtplib
+SpeechRecognition
 pyaudio
-platform
-sys
-from bs4 import BeautifulSoup
-email
-imaplib
-gtts
+beautifulsoup4
+gTTS
 pyglet
-time
