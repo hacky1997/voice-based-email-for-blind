@@ -10,6 +10,9 @@ from gtts import gTTS
 import pyglet
 import os, time
 
+#pyglet.lib.load_library('avbin')
+#pyglet.have_avbin=True
+
 print ("-"*60)
 print ("       Project: Voice based Email for blind")
 print ("          <--Created by sayak naskar-->")
