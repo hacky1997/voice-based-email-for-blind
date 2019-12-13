@@ -24,8 +24,7 @@
  - For download manually [AVbin](http://avbin.github.io/AVbin/Download.html)
 
 ## Pyaudio
- - Select your achitecture & Download `pyaudio` from this link. 
-      ``` https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio ```.
+ - Select your achitecture & Download [Pyaudio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio) from this link.
  - Open the terminal where you have kept your `.whl` file and add the following command.
       ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
  
