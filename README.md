@@ -12,7 +12,7 @@
 
 ## Modification
  - Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code.
- ```%userprofile%\Desktop```
+      ```%userprofile%\Desktop```
 
 ## Install all requirements
 ```pip install -r requirements.txt ```
@@ -25,9 +25,9 @@
 
 ## Pyaudio
  - Select your achitecture & Download `pyaudio` from this link. 
- ``` https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio ```.
+      ``` https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio ```.
  - Open the terminal where you have kept your `.whl` file and add the following command.
- ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
+      ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
  
 ## Usage
  ```python3 voice_based_email_for_blind.py ```
@@ -37,3 +37,5 @@
  
 ## Thank you!
 I really appreciate all kinds of feedback. Thanks for using and supporting this project!
+
+
