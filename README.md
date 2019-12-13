@@ -20,6 +20,4 @@
  ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
  
  ## Usage
- ```
-  - python3 voice_based_email_for_blind.py	
-  ```
+ ```python3 voice_based_email_for_blind.py ```
