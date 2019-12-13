@@ -10,8 +10,9 @@
 * Fetch unseen emails.
 * Count number of unseen emails.
 
-## Change the directory name in locations.
- - %userprofile%\Desktop
+## Modification
+ - Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code.
+`%userprofile%\Desktop`
 
 ## Install all requirements
 ```pip install -r requirements.txt ```
