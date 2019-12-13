@@ -1,5 +1,7 @@
+# Voice based Email For Blind
+
 ## About
-   The application will be a python-based application for visually impaired persons using speech to text voice response, thus enabling everyone to control their mail accounts using their voice only and to be able to read,send, and perform all the other useful tasks. The system will prompt the user with voice commands to perform certain action and the user will respond to the same. The main benefit of this system is that the use of mouse is completely eliminated, the user will have to respond through voice and keyboard click only.
+   The project is a `python-based` application for visually impaired persons using speech to text voice response, thus enabling everyone to control their mail accounts using their voice only and to be able to read,send, and perform all the other useful tasks. The system will prompt the user with voice commands to perform certain action and the user will respond to the same. The main benefit of this system is that the use of mouse is completely eliminated, the user will have to respond through voice and keyboard click only.
 
 ## Change the directory name in locations.
  - %userprofile%\Desktop
@@ -14,10 +16,12 @@
  - For download manually [AVbin](http://avbin.github.io/AVbin/Download.html)
 
 ## Pyaudio
- - Download `pyaudio` from this link based upon your achitecture 
+ - Select your achitecture & Download `pyaudio` from this link. 
  ``` https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio ```.
  - Open the terminal where you have kept your `.whl` file and add the following command.
  ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
  
  ## Usage
  ```python3 voice_based_email_for_blind.py ```
+ 
+ This is a **personal** development, please respect its philosophy.
