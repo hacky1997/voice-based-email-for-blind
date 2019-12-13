@@ -36,6 +36,9 @@
 ## Warning
  This is a **personal** development, please respect its philosophy.
  
+## Contribution
+   Feel free to open issues or PRs for any problem you may encounter, typos that you see or aspects that are confusing. Contributions are welcome, open an issue or email me if you have something you want to work on.
+ 
 ## Thank you!
 I really appreciate all kinds of feedback. Thanks for using and supporting this project!
 
