@@ -5,7 +5,7 @@
  - %userprofile%\Desktop
 
 ## Install all requirements
-``` - pip install -r requirements.txt ```
+```pip install -r requirements.txt ```
 
 ## Avbin
  - In some system, it requires avbin so keep it as it is. Don't delete this.
