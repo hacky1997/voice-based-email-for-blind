@@ -1,7 +1,14 @@
 # Voice based Email For Blind
 
+**Free, Open-Source Emailing System for Blind**
+
 ## About
    The project is a `python-based` application for visually impaired persons using speech to text voice response, thus enabling everyone to control their mail accounts using their voice only and to be able to read,send, and perform all the other useful tasks. The system will prompt the user with voice commands to perform certain action and the user will respond to the same. The main benefit of this system is that the use of mouse is completely eliminated, the user will have to respond through voice and keyboard click only.
+   
+## Feature
+* Send email via voice.
+* Fetch unseen emails.
+* Count number of unseen emails.
 
 ## Change the directory name in locations.
  - %userprofile%\Desktop
@@ -21,7 +28,11 @@
  - Open the terminal where you have kept your `.whl` file and add the following command.
  ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
  
- ## Usage
+## Usage
  ```python3 voice_based_email_for_blind.py ```
  
+## Warning
  This is a **personal** development, please respect its philosophy.
+ 
+## Thank you!
+I really appreciate all kinds of feedback. Thanks for using and supporting this project!
