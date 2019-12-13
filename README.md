@@ -26,10 +26,10 @@
 
 ## Pyaudio
  - Select your achitecture & Download [Pyaudio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio) from this link.
- - Open the terminal where you have kept your `.whl` file and add the following command.
+ - Open the terminal where you have kept your `.whl` file and add the following command in terminal.
 
-   ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl in terminal ```
- 
+   ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl```  
+   
 ## Usage
  ```python3 voice_based_email_for_blind.py ```
  
