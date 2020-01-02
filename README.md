@@ -11,7 +11,7 @@
 * Count number of unseen emails.
 
 ## Modification
- - Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code. Like: C:\Users\sayak\Desktop (this is my desktop directory).
+ - Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code. Like: `C:\Users\sayak\Desktop` (this is my desktop directory).
  
    ```%userprofile%\Desktop```
 
