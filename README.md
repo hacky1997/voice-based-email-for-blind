@@ -1,4 +1,7 @@
 # Voice based Email For Blind
+`Created By : Sayak Naskar`
+`License : MIT`
+`Email: sayaknaskar@gmail.com`
 
 **Free, Open-Source Emailing System for Blind**
 
