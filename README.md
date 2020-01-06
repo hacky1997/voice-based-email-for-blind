@@ -1,4 +1,4 @@
-[![voice email logo](https://ibb.co/cQgFvXW)]
+<p><a href="https://imgbb.com/"><img src="https://i.ibb.co/zZnR5H3/download.png" alt="download" border="0" /></a></p>
 # Voice based Email For Blind [CLI]
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71e0d668762049618c4d33fb0a62b7a7)](https://www.codacy.com/manual/hacky1997/voice-based-email-for-blind?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hacky1997/voice-based-email-for-blind&amp;utm_campaign=Badge_Grade)
