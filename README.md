@@ -1,6 +1,6 @@
 # Voice based Email For Blind [CLI]
 
-<p>
+<p align="center">
  <img src="https://i.ibb.co/zZnR5H3/download.png" border="0" />
 </p>
 
