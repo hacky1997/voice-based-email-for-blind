@@ -1,9 +1,9 @@
 # Voice based Email For Blind
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71e0d668762049618c4d33fb0a62b7a7)](https://www.codacy.com/manual/hacky1997/voice-based-email-for-blind?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hacky1997/voice-based-email-for-blind&amp;utm_campaign=Badge_Grade)
-.. image:: https://badge.fury.io/py/codacy-coverage.svg
-   :target: https://badge.fury.io/py/codacy-coverage
-   :alt: PyPI version
+
+[![PyPI version](https://badge.fury.io/py/codacy-coverage)]
+ 
 
 `Created By : Sayak Naskar`
 `License : MIT`
