@@ -1,5 +1,4 @@
 SpeechRecognition
-pyaudio
 beautifulsoup4
 gTTS
 pyglet
