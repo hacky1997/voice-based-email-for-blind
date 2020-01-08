@@ -26,24 +26,24 @@
 * Count number of unseen emails.
 
 ## Modification
- - Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code. Like: `C:\Users\sayak\Desktop` (this is my desktop directory).
+ * Just add your desktop directory in code where I have used `path` words in several lines. If you don't know your desktop directory then just open `terminal` or `command prompt` and paste the below code. Like: `C:\Users\sayak\Desktop` (this is my desktop directory).
  
    ```%userprofile%\Desktop```
    
- - Also paste your `email id` and `password` in line number 104.
+ * Also paste your `email id` and `password` in line number 104.
 
 ## Installation
 ```pip install -r requirements.txt ```
 
 ## Avbin
- - In some system, it requires avbin so keep it as it is. Don't delete this.
- - If your system needs this then just uncomment line number 13 & 14 in the code.
- - For more info have a look on this [AVbin](https://github.com/AVbin/AVbin)
- - For download manually [AVbin](http://avbin.github.io/AVbin/Download.html)
+ * In some system, it requires avbin so keep it as it is. Don't delete this.
+ * If your system needs this then just uncomment line number 13 & 14 in the code.
+ * For more info have a look on this [AVbin](https://github.com/AVbin/AVbin)
+ * For download manually [AVbin](http://avbin.github.io/AVbin/Download.html)
 
 ## Pyaudio
- - Select your achitecture & Download [Pyaudio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio) from this link.
- - Open the terminal where you have kept your `.whl` file and add the following command in terminal.
+ * Select your achitecture & Download [Pyaudio](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio) from this link.
+ * Open the terminal where you have kept your `.whl` file and add the following command in terminal.
 
    ``` pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl```  
    
