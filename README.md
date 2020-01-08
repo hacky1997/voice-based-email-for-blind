@@ -33,13 +33,14 @@
  * Also paste your `email id` and `password` in line number 104.
 
 ## Installation
+
 <details><summary>Windows Installation</summary>
  
  ### ```pip install -r requirements.txt```
 
  <details><summary>Linux Installation</summary>
  
- ### ``` python3 -m pip install -r requirements.txt```
+ ### ``` python3 -m pip install -r requirements.txt``` 
  
 </details>
 
