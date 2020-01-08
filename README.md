@@ -33,7 +33,13 @@
  * Also paste your `email id` and `password` in line number 104.
 
 ## Installation
-```pip install -r requirements.txt ```
+<details><summary>Windows Installation</summary>
+ 
+### ```pip install -r requirements.txt```
+
+<details><summary>Windows Installation</summary>
+ 
+### ``` python3 -m pip install -r requirements.txt```
 
 ## Avbin
  * In some system, it requires avbin so keep it as it is. Don't delete this.
