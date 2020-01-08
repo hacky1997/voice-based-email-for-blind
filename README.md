@@ -40,6 +40,8 @@
  <details><summary>Linux Installation</summary>
  
  ### ``` python3 -m pip install -r requirements.txt```
+ 
+</details>
 
 ## Avbin
  * In some system, it requires avbin so keep it as it is. Don't delete this.
