@@ -8,6 +8,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71e0d668762049618c4d33fb0a62b7a7)](https://www.codacy.com/manual/hacky1997/voice-based-email-for-blind?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hacky1997/voice-based-email-for-blind&amp;utm_campaign=Badge_Grade)
 [![PyPI version](https://badge.fury.io/py/codacy-coverage.svg)](https://badge.fury.io/py/codacy-coverage)
 [![Circleci](https://circleci.com/gh/hacky1997/voice-based-email-for-blind.svg?style=svg)](https://circleci.com/gh/hacky1997/voice-based-email-for-blind)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/hacky1997/voice-based-email-for-blind/fork)
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
  
 `Created By : Sayak Naskar`
 `License : MIT`
