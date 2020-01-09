@@ -65,7 +65,8 @@
  
 ## Warning
  This is a **personal** development, please respect its philosophy.
-  **Note: I will try to modify this code and will upload the modified version.
+  
+**Note: I will try to modify this code and will upload the modified version.
  
 ## Contribution
    Feel free to open issues or PRs for any problem you may encounter, typos that you see or aspects that are confusing. Contributions are welcome, open an issue or email me if you have something you want to work on.
