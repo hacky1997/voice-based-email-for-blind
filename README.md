@@ -33,6 +33,7 @@
    ```%userprofile%\Desktop```
    
  * Also paste your `email id` and `password` in line number 104.
+ * If `invalid or unsupported audio file` occurs or `Recall that only FLAC, AIFF, and RIFF WAV files are supported` occurs then try this [link](https://stackoverflow.com/questions/25672289/failed-to-open-file-file-wav-as-a-wav-due-to-file-does-not-start-with-riff-id/57349558#57349558). Read the file with `librosa`, then convert it back to a temporary `.wav` file. Then read it back with the `wave` package.
 
 ## Installation
 
