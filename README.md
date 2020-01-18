@@ -39,13 +39,26 @@
 
 <details><summary>Windows Installation</summary>
  
- #### ```pip install -r requirements.txt```
+ #### Python2
+ 
+  ```pip install -r requirements.txt```
+
+#### Python3
+ 
+  ```python3 -m pip install -r requirements.txt```
  
 </details>
 
 <details><summary>Linux Installation</summary>
  
- #### `python3 -m pip install -r requirements.txt`
+ 
+ #### Python2
+ 
+  ```pip install -r requirements.txt```
+
+#### Python3
+ 
+  ```python3 -m pip install -r requirements.txt```
  
 </details>
 
