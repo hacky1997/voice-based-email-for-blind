@@ -54,7 +54,8 @@
 </details>
 
 ## Avbin
- * In some system, it requires avbin so keep it as it is. Don't delete this.
+ * In some system, it requires avbin so keep it as it is. Don't delete those exe files.
+ * So install `avbin`. I have provided two types of avbin. Just install one of them according your architecture.
  * If your system needs this then just uncomment line number 13 & 14 in the code.
  * For more info have a look on this [AVbin](https://github.com/AVbin/AVbin)
  * For download manually [AVbin](http://avbin.github.io/AVbin/Download.html)
