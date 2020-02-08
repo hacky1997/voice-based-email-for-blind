@@ -83,7 +83,7 @@ except sr.RequestError as e:
     print("Could not request results from Google Speech Recognition service; {0}".format(e)) 
 
 #choices details
-if int(text) == 1:
+if text == '1' or text == 'One' or text == 'one':
     r = sr.Recognizer() #recognize
     with sr.Microphone() as source:
         print ("Your message :")
@@ -113,9 +113,9 @@ if int(text) == 1:
     os.remove(ttsname)
     mail.close()   
     
-if int(text) == 2:
+if text == '2' or text == 'tu' or text == 'two' or text == 'Tu' or text == 'to' or text == 'To' :
     mail = imaplib.IMAP4_SSL('imap.gmail.com',993) #this is host and port area.... ssl security
-    unm = ('your mail/ victim mail')  #username
+    unm = ('your mail or victim mail')  #username
     psw = ('pswrd')  #password
     mail.login(unm,psw)  #login
     stat, total = mail.select('Inbox')  #total number of mails in inbox
