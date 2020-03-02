@@ -55,9 +55,13 @@
 
 #### Installation with Python3
   ```root@kali:~/git clone https://github.com/hacky1997/voice-based-email-for-blind.git```
+  
   ```root@kali:~/cd voice-based-email-for-blind```
+  
   ```root@kali:~/pip3 install -r requirements.txt```
+  
   ```root@kali:~/python3 voice_based_email_for_blind.py```
+  
 </details>
 
 ## Avbin
