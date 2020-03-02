@@ -40,18 +40,21 @@
 
 <details><summary>Windows Installation</summary>
 
-#### Python3
- 
-  ```python3 -m pip install -r requirements.txt```
+#### Installation with Python3
+ ```C:\Users\sayak>git clone https://github.com/hacky1997/voice-based-email-for-blind.git```
+ ```C:\Users\sayak>cd voice-based-email-for-blind```
+ ```C:\Users\sayak>python3 -m pip install -r requirements.txt```
+ ```C:\Users\sayak>python3 voice_based_email_for_blind.py```
  
 </details>
 
 <details><summary>Linux Installation</summary>
 
-#### Python3
- 
-  ```pip3 install -r requirements.txt```
- 
+#### Installation with Python3
+  ```root@kali:~/git clone https://github.com/hacky1997/voice-based-email-for-blind.git```
+  ```root@kali:~/cd voice-based-email-for-blind```
+  ```root@kali:~/pip3 install -r requirements.txt```
+  ```root@kali:~/python3 voice_based_email_for_blind.py```
 </details>
 
 ## Avbin
