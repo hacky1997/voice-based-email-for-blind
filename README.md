@@ -41,10 +41,13 @@
 <details><summary>Windows Installation</summary>
 
 #### Installation with Python3
- ```C:\Users\sayak>git clone https://github.com/hacky1997/voice-based-email-for-blind.git```
- ```C:\Users\sayak>cd voice-based-email-for-blind```
- ```C:\Users\sayak>python3 -m pip install -r requirements.txt```
- ```C:\Users\sayak>python3 voice_based_email_for_blind.py```
+   ```C:\Users\sayak>git clone https://github.com/hacky1997/voice-based-email-for-blind.git```
+   
+   ```C:\Users\sayak>cd voice-based-email-for-blind```
+   
+   ```C:\Users\sayak>python3 -m pip install -r requirements.txt```
+   
+   ```C:\Users\sayak>python3 voice_based_email_for_blind.py```
  
 </details>
 
