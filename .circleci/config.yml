@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/python:3.8.3
+      - image: circleci/python:3.8.4
      
     steps:
       - checkout
