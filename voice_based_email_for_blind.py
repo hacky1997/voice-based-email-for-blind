@@ -34,7 +34,7 @@ print ("You are logging from : "+login())
 #choices
 print ("1. composed a mail.")
 tts = gTTS(text="option 1. composed a mail.", lang='en')
-ttsname=("path/hello.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+ttsname=("hello.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
 tts.save(ttsname)
 
 music = pyglet.media.load(ttsname, streaming = False)
@@ -56,7 +56,7 @@ os.remove(ttsname)
 
 #this is for input choices
 tts = gTTS(text="Your choice ", lang='en')
-ttsname=("path/hello.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+ttsname=("hello.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
 tts.save(ttsname)
 
 music = pyglet.media.load(ttsname, streaming = False)
@@ -105,7 +105,7 @@ if text == '1' or text == 'One' or text == 'one':
     mail.sendmail('emailID','victimID',msg) #send part
     print ("Congrates! Your mail has send. ")
     tts = gTTS(text="Congrates! Your mail has send. ", lang='en')
-    ttsname=("path/send.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+    ttsname=("send.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
     tts.save(ttsname)
     music = pyglet.media.load(ttsname, streaming = False)
     music.play()
@@ -121,7 +121,7 @@ if text == '2' or text == 'tu' or text == 'two' or text == 'Tu' or text == 'to' 
     stat, total = mail.select('Inbox')  #total number of mails in inbox
     print ("Number of mails in your inbox :"+str(total))
     tts = gTTS(text="Total mails are :"+str(total), lang='en') #voice out
-    ttsname=("path/total.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+    ttsname=("total.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
     tts.save(ttsname)
     music = pyglet.media.load(ttsname, streaming = False)
     music.play()
@@ -132,7 +132,7 @@ if text == '2' or text == 'tu' or text == 'two' or text == 'Tu' or text == 'to' 
     unseen = mail.search(None, 'UnSeen') # unseen count
     print ("Number of UnSeen mails :"+str(unseen))
     tts = gTTS(text="Your Unseen mail :"+str(unseen), lang='en')
-    ttsname=("path/unseen.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+    ttsname=("unseen.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
     tts.save(ttsname)
     music = pyglet.media.load(ttsname, streaming = False)
     music.play()
@@ -150,7 +150,7 @@ if text == '2' or text == 'tu' or text == 'two' or text == 'Tu' or text == 'to' 
     print ("From: "+email_message['From'])
     print ("Subject: "+str(email_message['Subject']))
     tts = gTTS(text="From: "+email_message['From']+" And Your subject: "+str(email_message['Subject']), lang='en')
-    ttsname=("path/mail.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+    ttsname=("mail.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
     tts.save(ttsname)
     music = pyglet.media.load(ttsname, streaming = False)
     music.play()
@@ -165,7 +165,7 @@ if text == '2' or text == 'tu' or text == 'two' or text == 'Tu' or text == 'to' 
     txt = soup.get_text()
     print ("Body :"+txt)
     tts = gTTS(text="Body: "+txt, lang='en')
-    ttsname=("path/body.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+    ttsname=("body.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
     tts.save(ttsname)
     music = pyglet.media.load(ttsname, streaming = False)
     music.play()
