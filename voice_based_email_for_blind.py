@@ -18,7 +18,7 @@ import os, time
 
 #fetch project name
 tts = gTTS(text="Project: Voice based Email for blind", lang='en')
-ttsname=("path/name.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
+ttsname=("name.mp3") #Example: path -> C:\Users\sayak\Desktop> just change with your desktop directory. Don't use my directory.
 tts.save(ttsname)
 
 music = pyglet.media.load(ttsname, streaming = False)
@@ -45,7 +45,7 @@ os.remove(ttsname)
 
 print ("2. Check your inbox")
 tts = gTTS(text="option 2. Check your inbox", lang='en')
-ttsname=("hello.mp3")
+ttsname=("second.mp3")
 tts.save(ttsname)
 
 music = pyglet.media.load(ttsname, streaming = False)
