@@ -80,7 +80,25 @@ git tag -a "$TAG" -m "Release $TAG"
 # ── 4. Push ───────────────────────────────────────────────────────────────────
 echo ""
 echo "🚀 Pushing to GitHub..."
-git push origin main
+
+# Detect current branch name (could be master, main, or anything)
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+echo "   Branch detected: $BRANCH"
+
+# If repo has no commits yet, this is the very first push
+if ! git rev-parse HEAD &>/dev/null; then
+  echo "❌ No commits found. Make sure files are staged and committed."
+  exit 1
+fi
+
+# Rename to main if currently on master (GitHub default is now main)
+if [ "$BRANCH" = "master" ]; then
+  echo "   Renaming branch master → main..."
+  git branch -m master main
+  BRANCH="main"
+fi
+
+git push -u origin "$BRANCH"
 git push origin "$TAG"
 
 # ── 5. Create GitHub Release ──────────────────────────────────────────────────
@@ -90,6 +108,7 @@ echo "📝 Creating GitHub Release $TAG..."
 gh release create "$TAG" \
   --repo "$REPO" \
   --title "$TITLE" \
+  --target "$BRANCH" \
   --notes "## What's New in v2.0.0
 
 This is a **complete rewrite** of the original 2019 voice email project.
