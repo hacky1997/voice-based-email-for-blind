@@ -1,47 +1,36 @@
 version: 2.1
 
-orbs:
-  python: circleci/python@2.1.1
-
 jobs:
   lint:
-    executor:
-      name: python/default
-      tag: "3.11"
+    docker:
+      - image: cimg/python:3.11
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-          packages: flake8
+      - run:
+          name: Install flake8
+          command: pip install flake8
       - run:
           name: Lint
           command: flake8 . --exclude=venv,.venv --max-line-length=100 --ignore=E501,W503
 
   test:
-    executor:
-      name: python/default
-      tag: "3.11"
+    docker:
+      - image: cimg/python:3.11
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-          pip-dependency-file: requirements.txt
       - run:
-          name: Install test deps
-          command: pip install pytest pytest-cov
+          name: Install dependencies
+          command: pip install -r requirements.txt pytest pytest-cov
       - run:
           name: Run tests
-          command: pytest --tb=short --cov=. --cov-report=xml -v
-      - store_artifacts:
-          path: coverage.xml
+          command: pytest --tb=short -v
 
   build-docker:
     docker:
       - image: cimg/base:stable
     steps:
       - checkout
-      - setup_remote_docker:
-          version: docker23
+      - setup_remote_docker
       - run:
           name: Build Docker image
           command: docker build -t voice-email:${CIRCLE_SHA1} .
@@ -58,4 +47,4 @@ workflows:
             - test
           filters:
             branches:
-              only: main
+              only: master
