@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+
+  # ── App ────────────────────────────────────────────────
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+      - GOOGLE_REDIRECT_URI=${GOOGLE_REDIRECT_URI:-http://localhost/api/auth/gmail/callback}
+      - CONTACTS_FILE=/data/contacts.json
+    volumes:
+      - contacts_data:/data
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/auth/status')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ── Caddy (automatic HTTPS) ────────────────────────────
+  # Needed for Web Speech API on mobile (requires HTTPS).
+  # For local dev on the same machine, skip this and use app directly.
+  # For LAN mobile access: set CADDY_DOMAIN to your local IP or a domain.
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+    profiles:
+      - https  # Only start with: docker compose --profile https up
+
+volumes:
+  contacts_data:
+  caddy_data:
+  caddy_config:

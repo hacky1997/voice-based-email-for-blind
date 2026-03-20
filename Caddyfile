@@ -1,0 +1,36 @@
+# ── Caddyfile ─────────────────────────────────────────────────────────────────
+# Automatic HTTPS for the Voice Email PWA.
+#
+# Usage options:
+#
+# A) Public domain (auto SSL from Let's Encrypt):
+#    Replace :80 with your domain: yourdomain.com
+#
+# B) Local LAN IP with self-signed cert (for phone testing):
+#    Replace :80 with your LAN IP: 192.168.1.10
+#    Then visit https://192.168.1.10on your phone.
+#    Accept the self-signed cert warning once.
+#
+# C) localhost only (no cert needed, browser allows speech):
+#    Keep :80 as-is for http://localhost
+
+:80 {
+    reverse_proxy app:8000
+
+    # Security headers
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    # Compress responses
+    encode gzip
+
+    # Log
+    log {
+        output stdout
+        format console
+    }
+}
