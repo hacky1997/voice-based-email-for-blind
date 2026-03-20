@@ -1,0 +1,99 @@
+# Create the directory
+mkdir -p .circleci
+
+# Create the config file directly
+cat > .circleci/config.yml << 'EOF'
+version: 2.1
+
+orbs:
+  python: circleci/python@2.1.1
+
+jobs:
+  lint:
+    executor:
+      name: python/default
+      tag: "3.11"
+    steps:
+      - checkout
+      - python/install-packages:
+          pkg-manager: pip
+          packages: flake8
+      - run:
+          name: Lint (flake8)
+          command: |
+            flake8 . \
+              --exclude=venv,.venv \
+              --max-line-length=100 \
+              --ignore=E501,W503
+
+  test:
+    executor:
+      name: python/default
+      tag: "3.11"
+    steps:
+      - checkout
+      - python/install-packages:
+          pkg-manager: pip
+          pip-dependency-file: requirements.txt
+      - run:
+          name: Install test deps
+          command: pip install pytest pytest-cov
+      - run:
+          name: Run tests
+          command: |
+            pytest \
+              --tb=short \
+              --cov=. \
+              --cov-report=xml \
+              --cov-report=term-missing \
+              -v
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: coverage.xml
+
+  build-docker:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: docker23
+      - run:
+          name: Build Docker image
+          command: docker build -t voice-email:${CIRCLE_SHA1} .
+      - run:
+          name: Smoke test container
+          command: |
+            docker run -d \
+              -e SECRET_KEY=ci-test-key \
+              -p 8000:8000 \
+              --name test-container \
+              voice-email:${CIRCLE_SHA1}
+            sleep 5
+            docker exec test-container \
+              python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/auth/status')"
+            docker stop test-container
+
+workflows:
+  build_and_test:
+    jobs:
+      - lint
+      - test:
+          requires:
+            - lint
+      - build-docker:
+          requires:
+            - test
+          filters:
+            branches:
+              only: main
+EOF
+
+# Confirm it was created
+cat .circleci/config.yml
+
+# Commit and push
+git add .circleci/config.yml
+git commit -m "ci: add CircleCI config"
+git push
